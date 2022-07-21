@@ -5,6 +5,7 @@ const router = express.Router();
 const { userControl } = require('../middlewares/authMiddleware');
 
 // zincirleme route oluşturma
-router.route('/').get(get_contact).post(create_new_contact)
+router.route('/').get(get_contact)
+router.route('/').post(create_new_contact)
 
 module.exports = router;
